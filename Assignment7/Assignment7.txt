@@ -1,0 +1,498 @@
+You are now connected to database "sricharraanramaswamy" as user "abc".
+Problem 7
+CREATE TABLE
+INSERT 0 11
+ m  | n  
+----+----
+  1 |  1
+  2 |  2
+  2 |  3
+  2 |  4
+  3 |  2
+  3 |  3
+  3 |  4
+  4 |  2
+  4 |  3
+  4 |  4
+  5 |  5
+  5 |  6
+  5 |  7
+  5 |  8
+  6 |  5
+  6 |  6
+  6 |  7
+  6 |  8
+  7 |  5
+  7 |  6
+  7 |  7
+  7 |  8
+  8 |  5
+  8 |  6
+  8 |  7
+  8 |  8
+  9 |  9
+  9 | 10
+  9 | 11
+ 10 |  9
+ 10 | 10
+ 10 | 11
+ 11 |  9
+ 11 | 10
+ 11 | 11
+ 12 | 12
+(36 rows)
+
+CREATE FUNCTION
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:58: NOTICE:  table "same_pairs" does not exist, skipping
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:58: NOTICE:  table "all_pairs" does not exist, skipping
+ m  | n  
+----+----
+  1 |  1
+  2 |  2
+  2 |  3
+  2 |  4
+  3 |  2
+  3 |  3
+  3 |  4
+  4 |  2
+  4 |  3
+  4 |  4
+  5 |  5
+  5 |  6
+  5 |  7
+  5 |  8
+  6 |  5
+  6 |  6
+  6 |  7
+  6 |  8
+  7 |  5
+  7 |  6
+  7 |  7
+  7 |  8
+  8 |  5
+  8 |  6
+  8 |  7
+  8 |  8
+  9 |  9
+  9 | 10
+  9 | 11
+ 10 |  9
+ 10 | 10
+ 10 | 11
+ 11 |  9
+ 11 | 10
+ 11 | 11
+ 12 | 12
+(36 rows)
+
+Problem 8
+CREATE TABLE
+CREATE TABLE
+INSERT 0 11
+INSERT 0 5
+Problem 8.a
+CREATE FUNCTION
+ pid | sid | quantity 
+-----+-----+----------
+   1 |   2 |        1
+   1 |   3 |        3
+   1 |   4 |        2
+   2 |   5 |        1
+   2 |   6 |        4
+   3 |   7 |        2
+   4 |   8 |        1
+   5 |   9 |        2
+   7 |  10 |        2
+   7 |  11 |        3
+   9 |  12 |        5
+(11 rows)
+
+ pid | weight 
+-----+--------
+   6 |      1
+   8 |      4
+  10 |      1
+  11 |      5
+  12 |      3
+(5 rows)
+
+ p  | recursiveaggregatedweight 
+----+---------------------------
+  1 |                       144
+  2 |                        34
+  3 |                        34
+  4 |                         4
+  5 |                        30
+  6 |                         1
+  7 |                        17
+  8 |                         4
+  9 |                        15
+ 10 |                         1
+ 11 |                         5
+ 12 |                         3
+(12 rows)
+
+Problem 8.b
+CREATE FUNCTION
+CREATE FUNCTION
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:173: NOTICE:  table "anc" does not exist, skipping
+
+ p  | nonrecursiveaggregatedweight 
+----+------------------------------
+  1 |                          144
+  2 |                           34
+  3 |                           34
+  4 |                            4
+  5 |                           30
+  6 |                            1
+  7 |                           17
+  8 |                            4
+  9 |                           15
+ 10 |                            1
+ 11 |                            5
+ 12 |                            3
+(12 rows)
+
+Problem 11
+CREATE TABLE
+INSERT 0 4
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:189: NOTICE:  view "unique_words" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE FUNCTION
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:215: NOTICE:  table "all_combinations" does not exist, skipping
+DROP TABLE
+SELECT 64
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:220: NOTICE:  function frequentsets() does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+frequentSets(0)
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:250: NOTICE:  table "result" does not exist, skipping
+    result1    
+---------------
+ {}
+ {A}
+ {A,B}
+ {A,B,C}
+ {A,B,C,D}
+ {A,B,C,D,E}
+ {A,B,C,D,E,F}
+ {A,B,C,D,F}
+ {A,B,C,E}
+ {A,B,C,E,F}
+ {A,B,C,F}
+ {A,B,D}
+ {A,B,D,E}
+ {A,B,D,E,F}
+ {A,B,D,F}
+ {A,B,E}
+ {A,B,E,F}
+ {A,B,F}
+ {A,C}
+ {A,C,D}
+ {A,C,D,E}
+ {A,C,D,E,F}
+ {A,C,D,F}
+ {A,C,E}
+ {A,C,E,F}
+ {A,C,F}
+ {A,D}
+ {A,D,E}
+ {A,D,E,F}
+ {A,D,F}
+ {A,E}
+ {A,E,F}
+ {A,F}
+ {B}
+ {B,C}
+ {B,C,D}
+ {B,C,D,E}
+ {B,C,D,E,F}
+ {B,C,D,F}
+ {B,C,E}
+ {B,C,E,F}
+ {B,C,F}
+ {B,D}
+ {B,D,E}
+ {B,D,E,F}
+ {B,D,F}
+ {B,E}
+ {B,E,F}
+ {B,F}
+ {C}
+ {C,D}
+ {C,D,E}
+ {C,D,E,F}
+ {C,D,F}
+ {C,E}
+ {C,E,F}
+ {C,F}
+ {D}
+ {D,E}
+ {D,E,F}
+ {D,F}
+ {E}
+ {E,F}
+ {F}
+(64 rows)
+
+frequentSets(1)
+   result1   
+-------------
+ {}
+ {A}
+ {A,B}
+ {A,B,C}
+ {A,B,C,D}
+ {A,B,C,D,E}
+ {A,B,C,E}
+ {A,B,C,E,F}
+ {A,B,C,F}
+ {A,B,D}
+ {A,B,D,E}
+ {A,B,E}
+ {A,B,E,F}
+ {A,B,F}
+ {A,C}
+ {A,C,D}
+ {A,C,D,E}
+ {A,C,E}
+ {A,C,E,F}
+ {A,C,F}
+ {A,D}
+ {A,D,E}
+ {A,E}
+ {A,E,F}
+ {A,F}
+ {B}
+ {B,C}
+ {B,C,D}
+ {B,C,D,E}
+ {B,C,E}
+ {B,C,E,F}
+ {B,C,F}
+ {B,D}
+ {B,D,E}
+ {B,E}
+ {B,E,F}
+ {B,F}
+ {C}
+ {C,D}
+ {C,D,E}
+ {C,E}
+ {C,E,F}
+ {C,F}
+ {D}
+ {D,E}
+ {E}
+ {E,F}
+ {F}
+(48 rows)
+
+frequentSets(2)
+  result1  
+-----------
+ {}
+ {A}
+ {A,B}
+ {A,B,C}
+ {A,B,C,E}
+ {A,B,E}
+ {A,C}
+ {A,C,E}
+ {A,E}
+ {A,E,F}
+ {A,F}
+ {B}
+ {B,C}
+ {B,C,E}
+ {B,E}
+ {C}
+ {C,E}
+ {E}
+ {E,F}
+ {F}
+(20 rows)
+
+frequentSets(3)
+ result1 
+---------
+ {}
+ {A}
+ {A,E}
+ {E}
+(4 rows)
+
+frequentSets(4)
+ result1 
+---------
+ {}
+ {A}
+ {A,E}
+ {E}
+(4 rows)
+
+frequentSets(5)
+ result1 
+---------
+(0 rows)
+
+Problem 12
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:270: NOTICE:  table "graph" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+Problem 12.a
+CREATE TABLE
+CREATE FUNCTION
+CREATE FUNCTION
+INSERT 0 4
+ recursivehamiltonian 
+----------------------
+ t
+(1 row)
+
+TRUNCATE TABLE
+DELETE 4
+INSERT 0 5
+ recursivehamiltonian 
+----------------------
+ f
+(1 row)
+
+TRUNCATE TABLE
+DELETE 5
+Problem 12.b
+CREATE FUNCTION
+DELETE 0
+INSERT 0 4
+ nonrecursivehamiltonian 
+-------------------------
+ t
+(1 row)
+
+TRUNCATE TABLE
+DELETE 4
+DELETE 0
+INSERT 0 5
+ nonrecursivehamiltonian 
+-------------------------
+ f
+(1 row)
+
+TRUNCATE TABLE
+DELETE 5
+DELETE 0
+INSERT 0 10
+ nonrecursivehamiltonian 
+-------------------------
+ t
+(1 row)
+
+TRUNCATE TABLE
+DELETE 10
+INSERT 0 9
+ nonrecursivehamiltonian 
+-------------------------
+ f
+(1 row)
+
+TRUNCATE TABLE
+DELETE 9
+Problem 14
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:473: NOTICE:  table "r" does not exist, skipping
+DROP TABLE
+psql:/Users/abc/Desktop/IUB/B561/Assignment 7/Assignment7.sql:474: NOTICE:  table "s" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 5
+INSERT 0 6
+CREATE TABLE
+INSERT 0 11
+CREATE FUNCTION
+CREATE FUNCTION
+INSERT 0 10
+
+ a | b 
+---+---
+ 1 | 1
+ 1 | 2
+ 2 | 2
+(3 rows)
+
+Problem 16
+ a | array_agg | sum 
+---+-----------+-----
+ 2 | {2,3}     |   5
+(1 row)
+
+DROP TABLE
+CREATE TABLE
+INSERT 0 6
+CREATE TABLE
+INSERT 0 6
+CREATE FUNCTION
+CREATE FUNCTION
+ key | value | sum 
+-----+-------+-----
+   2 | {2,3} |   5
+   3 | {2}   |   2
+(2 rows)
+
+Problem 17
+DROP TABLE
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 7
+INSERT 0 10
+Problem 17.a
+CREATE TYPE
+CREATE VIEW
+ k |        rsdata         
+---+-----------------------
+ 1 | ("{1,2,3}","{1,2,3}")
+ 2 | ("{2,3}",{})
+ 3 | ({2},{2})
+ 4 | ({},"{1,2}")
+ 5 | ({},"{1,2}")
+ 6 | ({},"{4,5}")
+ 7 | ({7},{})
+(7 rows)
+
+Problem 17.b
+ k | v 
+---+---
+ 1 | 1
+ 1 | 2
+ 1 | 3
+ 3 | 2
+(4 rows)
+
+Problem 17.c
+ rk | sk 
+----+----
+  1 |  6
+  2 |  6
+  3 |  6
+  7 |  1
+  7 |  3
+  7 |  4
+  7 |  5
+  7 |  6
+(8 rows)
+
+ r_key | s_key 
+-------+-------
+     1 |     6
+     2 |     6
+     3 |     6
+     7 |     6
+     7 |     1
+     7 |     4
+     7 |     3
+     7 |     5
+(8 rows)
+
+ COLLABORATED WITH SRIVARSHA CHELLAPILLA, ATHULYA ANAND, SIDDHANT SUNIL MESHRAM
+You are now connected to database "postgres" as user "abc".
