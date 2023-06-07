@@ -1,0 +1,144 @@
+Problem 1
+Problem 1 conceptual example 1 : Existing primary key cannot be added
+psql:/Users/abc/Desktop/IUB/B561/Assignment1Script.sql:185: ERROR:  duplicate key value violates unique constraint "company_pkey"
+DETAIL:  Key (cname)=(Apple) already exists.
+INSERT 0 1
+DELETE 1
+Problem 1 conceptual example 2 : Cannot add a tuple in the foreign key table if it is not present in primary key 
+psql:/Users/abc/Desktop/IUB/B561/Assignment1Script.sql:192: ERROR:  insert or update on table "companylocation" violates foreign key constraint "companylocation_cname_fkey"
+DETAIL:  Key (cname)=(TCS) is not present in table "company".
+INSERT 0 1
+INSERT 0 1
+DELETE 1
+DELETE 1
+Problem 1 conceptual example 3 : Deleting the primary key without cosidering the foreign key
+psql:/Users/abc/Desktop/IUB/B561/Assignment1Script.sql:203: ERROR:  update or delete on table "person" violates foreign key constraint "worksfor_pid_fkey" on table "worksfor"
+DETAIL:  Key (pid)=(1001) is still referenced from table "worksfor".
+Correct way cascading where you delete the pid from its foreign tables and then from its primary table
+Problem 1 conceptual example 4 : Inserting a wrong datatype
+psql:/Users/abc/Desktop/IUB/B561/Assignment1Script.sql:207: ERROR:  invalid input syntax for type integer: "sri"
+LINE 1: INSERT INTO Person Values ('sri','jeno','bloomington');
+                                   ^
+INSERT INTO Person Values (1040,jeno,bloomington);
+DELETE FROM Person WHERE pid = 1040
+
+Problem 2
+ pid  | pname 
+------+-------
+ 1008 | Emma
+ 1014 | Deepa
+ 1009 | Hasan
+(3 rows)
+
+Problem 3
+ cname | cname 
+-------+-------
+ IBM   | ACM
+ ACM   | IBM
+(2 rows)
+
+Problem 4
+ pid  | pname 
+------+-------
+ 1006 | Ryan
+ 1008 | Emma
+ 1009 | Hasan
+ 1010 | Linda
+ 1013 | Lisa
+ 1014 | Deepa
+ 1015 | Chris
+ 1017 | Latha
+(8 rows)
+
+Problem 5
+   skill   
+-----------
+ Databases
+(1 row)
+
+Problem 6
+ pid  | pname  | salary 
+------+--------+--------
+ 1016 | YinYue |  55000
+(1 row)
+
+Problem 7
+   cname   
+-----------
+ Amazon
+ Apple
+ Microsoft
+ Netflix
+(4 rows)
+
+Problem 8
+   cname   | salary 
+-----------+--------
+ Amazon    |  60000
+ Apple     |  65000
+ Google    |  70000
+ Microsoft |  50000
+ Netflix   |  60000
+(5 rows)
+
+Problem 9
+ pid  | pname 
+------+-------
+ 1010 | Linda
+ 1013 | Lisa
+ 1015 | Chris
+ 1017 | Latha
+(4 rows)
+
+Problem 10
+ pid  | pname | cname  | salary 
+------+-------+--------+--------
+ 1008 | Emma  | Amazon |  50000
+(1 row)
+
+Problem 11
+ pid  | pname 
+------+-------
+ 1017 | Latha
+(1 row)
+
+Problem 12
+    skill    
+-------------
+ Programming
+ Databases
+(2 rows)
+
+Problem 13
+ pid  | pname  
+------+--------
+ 1002 | Vidya
+ 1005 | Megan
+ 1006 | Ryan
+ 1009 | Hasan
+ 1010 | Linda
+ 1011 | Nick
+ 1014 | Deepa
+ 1016 | YinYue
+ 1017 | Latha
+ 1018 | Arif
+ 1019 | John
+(11 rows)
+
+Problem 18
+ ?column? 
+----------
+ f
+(1 row)
+
+Problem 19
+ exists 
+--------
+ t
+(1 row)
+
+Problem 20
+ exists 
+--------
+ t
+(1 row)
