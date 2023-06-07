@@ -1,0 +1,218 @@
+CREATE DATABASE
+You are now connected to database "sricharraanramaswamy" as user "abc".
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 19
+INSERT 0 8
+INSERT 0 19
+INSERT 0 15
+INSERT 0 5
+INSERT 0 37
+INSERT 0 13
+INSERT 0 63
+
+Problem 6
+   cname   | headquarter 
+-----------+-------------
+ Apple     | Cupertino
+ Netflix   | LosGatos
+ Microsoft | Redmond
+(3 rows)
+
+translation step 6.1 (removing "and" in where)
+   cname   | headquarter 
+-----------+-------------
+ Apple     | Cupertino
+ Netflix   | LosGatos
+ Microsoft | Redmond
+(3 rows)
+
+translation step 6.2 (removing "in" and "some")
+   cname   | headquarter 
+-----------+-------------
+ Netflix   | LosGatos
+ Microsoft | Redmond
+ Apple     | Cupertino
+(3 rows)
+
+translation step 6.3 (Introducing "joins" and "natural joins")
+   cname   | headquarter 
+-----------+-------------
+ Netflix   | LosGatos
+ Microsoft | Redmond
+ Apple     | Cupertino
+(3 rows)
+
+Problem 7
+ pid  
+------
+ 1011
+(1 row)
+
+Removing "EXISTS" and "NOT EXISTS"
+ pid  
+------
+ 1011
+(1 row)
+
+Removing "and" in where
+ pid  
+------
+ 1011
+(1 row)
+
+Introducing "cross joins" and "joins"
+ pid  
+------
+ 1011
+(1 row)
+
+Removing "not in" from where
+ pid  
+------
+ 1011
+(1 row)
+
+Problem 8
+ pid  | pname 
+------+-------
+ 1001 | Jean
+ 1002 | Vidya
+ 1009 | Hasan
+ 1012 | Eric
+(4 rows)
+
+Removing "EXISTS" in WHERE
+ pid  | pname 
+------+-------
+ 1001 | Jean
+ 1002 | Vidya
+ 1009 | Hasan
+ 1012 | Eric
+(4 rows)
+
+Removing "NOT IN" in WHERE
+ pid  | pname 
+------+-------
+ 1002 | Vidya
+ 1012 | Eric
+ 1001 | Jean
+ 1009 | Hasan
+(4 rows)
+
+Introducing "joins" and "Natural joins"
+ pid  | pname 
+------+-------
+ 1002 | Vidya
+ 1012 | Eric
+ 1001 | Jean
+ 1009 | Hasan
+(4 rows)
+
+Problem 9
+ cname  | headquarter  
+--------+--------------
+ Google | MountainView
+(1 row)
+
+Removing "EXISTS" and "NOT EXISTS" in WHERE
+ cname  | headquarter  
+--------+--------------
+ Google | MountainView
+(1 row)
+
+Removing "OR" in WHERE
+ cname  | headquarter  
+--------+--------------
+ Google | MountainView
+(1 row)
+
+Removing "NOT IN" in WHERE
+ cname  | headquarter  
+--------+--------------
+ Google | MountainView
+(1 row)
+
+Introducing "Joins" and "Natural Joins"
+ cname  | headquarter  
+--------+--------------
+ Google | MountainView
+(1 row)
+
+Problem 10
+ pid  | exists 
+------+--------
+ 1001 | t
+ 1002 | f
+ 1003 | t
+ 1004 | f
+ 1005 | f
+ 1006 | f
+ 1007 | f
+ 1008 | f
+ 1009 | f
+ 1010 | f
+ 1011 | f
+ 1012 | f
+ 1013 | f
+ 1014 | f
+ 1015 | f
+ 1016 | f
+ 1017 | f
+ 1018 | f
+ 1019 | f
+(19 rows)
+
+Removing "EXISTS" from WHERE
+ pid  | bool 
+------+------
+ 1015 | f
+ 1001 | t
+ 1004 | f
+ 1014 | f
+ 1002 | f
+ 1005 | f
+ 1018 | f
+ 1016 | f
+ 1009 | f
+ 1008 | f
+ 1007 | f
+ 1010 | f
+ 1006 | f
+ 1019 | f
+ 1017 | f
+ 1011 | f
+ 1012 | f
+ 1013 | f
+ 1003 | t
+(19 rows)
+
+Introducing "JOINS"
+ pid  | bool 
+------+------
+ 1015 | f
+ 1001 | t
+ 1004 | f
+ 1014 | f
+ 1002 | f
+ 1005 | f
+ 1018 | f
+ 1016 | f
+ 1009 | f
+ 1008 | f
+ 1007 | f
+ 1010 | f
+ 1006 | f
+ 1019 | f
+ 1017 | f
+ 1011 | f
+ 1012 | f
+ 1013 | f
+ 1003 | t
+(19 rows)
