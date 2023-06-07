@@ -1,0 +1,263 @@
+CREATE DATABASE
+You are now connected to database "sricharraanramaswamy" as user "abc".
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 19
+INSERT 0 8
+INSERT 0 19
+INSERT 0 15
+INSERT 0 5
+INSERT 0 37
+INSERT 0 13
+INSERT 0 63
+CREATE TABLE
+INSERT 0 14
+Problem 1
+ pid  | pname 
+------+-------
+ 1011 | Nick
+(1 row)
+
+ pid  | pname 
+------+-------
+ 1011 | Nick
+(1 row)
+
+ pid  | pname 
+------+-------
+ 1011 | Nick
+(1 row)
+
+Problem 2
+ cname | pid  | pname | salary 
+-------+------+-------+--------
+ Apple | 1018 | Arif  |  50000
+ Apple | 1012 | Eric  |  50000
+ Apple | 1014 | Deepa |  50000
+(3 rows)
+
+ cname | pid  | pname | salary 
+-------+------+-------+--------
+ Apple | 1018 | Arif  |  50000
+ Apple | 1012 | Eric  |  50000
+ Apple | 1014 | Deepa |  50000
+(3 rows)
+
+ cname | pid  | pname | salary 
+-------+------+-------+--------
+ Apple | 1012 | Eric  |  50000
+ Apple | 1014 | Deepa |  50000
+ Apple | 1018 | Arif  |  50000
+(3 rows)
+
+Problem 3
+   cname   | pid  
+-----------+------
+ Google    | 1005
+ Microsoft | 1019
+ Netflix   | 1017
+ Yahoo     | 1013
+(4 rows)
+
+   cname   | pid  
+-----------+------
+ Google    | 1005
+ Microsoft | 1019
+ Yahoo     | 1013
+ Netflix   | 1017
+(4 rows)
+
+   cname   | pid  
+-----------+------
+ Google    | 1005
+ Microsoft | 1019
+ Yahoo     | 1013
+ Netflix   | 1017
+(4 rows)
+
+Problem 4
+   skill   
+-----------
+ AI
+ Databases
+(2 rows)
+
+   skill   
+-----------
+ AI
+ Databases
+(2 rows)
+
+Problem 5
+ pid  | pname 
+------+-------
+ 1005 | Megan
+(1 row)
+
+ pid  | pname 
+------+-------
+ 1005 | Megan
+(1 row)
+
+Problem 6
+ pid  | pname 
+------+-------
+ 1011 | Nick
+(1 row)
+
+Problem 7
+ cname | pid  | pname | salary 
+-------+------+-------+--------
+ Apple | 1018 | Arif  |  50000
+ Apple | 1012 | Eric  |  50000
+ Apple | 1014 | Deepa |  50000
+(3 rows)
+
+Problem 8
+   cname   | pid  
+-----------+------
+ Google    | 1005
+ Microsoft | 1019
+ Yahoo     | 1013
+ Netflix   | 1017
+(4 rows)
+
+Problem 9
+   skill   
+-----------
+ AI
+ Databases
+(2 rows)
+
+Problem 10
+ pid  | pname 
+------+-------
+ 1005 | Megan
+(1 row)
+
+Problem 16
+CREATE VIEW
+  p1  |  p2  |  p3  
+------+------+------
+ 1001 | 1019 | 1008
+ 1008 | 1019 | 1001
+ 1008 | 1001 | 1019
+ 1019 | 1001 | 1008
+ 1001 | 1008 | 1019
+ 1019 | 1008 | 1001
+(6 rows)
+
+Problem 17
+CREATE FUNCTION
+ pid | pname | city 
+-----+-------+------
+(0 rows)
+
+ pid | pname | city 
+-----+-------+------
+(0 rows)
+
+ pid  | pname |    city     
+------+-------+-------------
+ 1002 | Vidya | Cupertino
+ 1009 | Hasan | Bloomington
+ 1012 | Eric  | Cupertino
+ 1014 | Deepa | Bloomington
+ 1018 | Arif  | Bloomington
+(5 rows)
+
+Problem 18
+CREATE FUNCTION
+ pid  | pname |    city     
+------+-------+-------------
+ 1008 | Emma  | Bloomington
+(1 row)
+
+ pid  | pname |    city     
+------+-------+-------------
+ 1012 | Eric  | Cupertino
+ 1014 | Deepa | Bloomington
+(2 rows)
+
+ pid | pname | city 
+-----+-------+------
+(0 rows)
+
+Problem 19
+CREATE FUNCTION
+ pid  | pname |    city     
+------+-------+-------------
+ 1008 | Emma  | Bloomington
+(1 row)
+
+ pid  | pname |    city     
+------+-------+-------------
+ 1002 | Vidya | Cupertino
+ 1009 | Hasan | Bloomington
+(2 rows)
+
+ pid | pname | city 
+-----+-------+------
+(0 rows)
+
+Problem 20
+Problem 20
+CREATE VIEW
+ n1 | n2 
+----+----
+  1 |  1
+  2 |  2
+  2 |  4
+  2 |  3
+  3 |  2
+  3 |  4
+  3 |  3
+  4 |  2
+  4 |  4
+  4 |  3
+  5 |  6
+  5 |  7
+  5 |  5
+  6 |  6
+  6 |  7
+  6 |  5
+  7 |  7
+  7 |  6
+  7 |  5
+  8 | 12
+  8 |  8
+  8 | 13
+  9 | 14
+  9 |  9
+  9 | 10
+  9 | 11
+ 10 | 14
+ 10 | 11
+ 10 |  9
+ 10 | 10
+ 11 | 10
+ 11 | 11
+ 11 |  9
+ 11 | 14
+ 12 |  8
+ 12 | 13
+ 12 | 12
+ 13 | 13
+ 13 |  8
+ 13 | 12
+ 14 | 10
+ 14 | 11
+ 14 |  9
+ 14 | 14
+ 15 | 15
+(45 rows)
+
+Collaborated with SRI VARSHA CHELLAPILLA, ATHULYA ANAND AND SIDDHANT MESHRAM(16,20)
+You are now connected to database "postgres" as user "abc".
+DROP DATABASE
